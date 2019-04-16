@@ -36,4 +36,13 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 27. Install git with `sudo apt-get install git`.
 28. Run `cd /var/www` and create a new folder with `sudo mkdir catalog`. Change the owner of the catalog folder using `sudo chown -R grader:grader catalog`.
 29. In `/var/www/catalog`, run `git clone https://github.com/phosid/Item-Catalog-Project` to clone your catalog project. *Replace my link with your link.
-30. 
+30. In the same folder containing the copied items, run `sudo nano catalog.wsgi` and add the follow text:
+`#!/usr/bin/python
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/var/www/FlaskApp/")
+
+from FlaskApp import app as application
+application.secret_key = 'Add your secret key'`
+31. 

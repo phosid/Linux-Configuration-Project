@@ -73,4 +73,7 @@ application.secret_key = 'Add your secret key'
 		CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
-35. 
+35. Update path to client_secrets for all your file to `/var/www/catalog/catalog/client_secrets.json`.
+36. Disable default ubuntu webpage with `sudo a2dissite 000-default.conf`.
+37. Enable catalog with `sudo a2ensite catalog.conf`.
+38. 

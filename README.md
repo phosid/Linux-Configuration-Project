@@ -7,5 +7,5 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 - URL: http://54.189.211.121.xip.io/
 
 ## Steps Taken:
-1. In the project, we used Amazon Lightsail for a publicly accessible Ubuntu Linux Server to host the web application. I made an account with Amazon Web Services and created a Lightsail Instance, selecting the "OS only" option and "Ubuntu 16.04 LTS".
+1. In this project, I used Amazon Lightsail for a publicly accessible Ubuntu Linux Server to host the web application. I made an account with Amazon Web Services and created a Lightsail Instance, selecting the "OS only" option and "Ubuntu 16.04 LTS". I kept the instance with its default name. As long as you delete the instance within one month, you should not be charged.
 2. 

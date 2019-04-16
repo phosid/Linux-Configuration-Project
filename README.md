@@ -12,5 +12,5 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 3. run `sudo apt-get upgdate` to make server aware of updates.
 4. run `sudo apt-get upgrade` to upgrade software.
 5. run `sudo apt-get autoremove` to remove software no longer required.
-6. run `sudo apt-get install finger` to install finger software; with this software, you can run `finger [username]`(for example, `finger ubuntu`) to find more details about a user.
+6. run `sudo apt-get install finger` to install finger software; with this software, you can run `finger [username]`(for example, `finger ubuntu`) to find more details about a particular user.
 7. 

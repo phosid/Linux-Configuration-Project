@@ -53,4 +53,24 @@ application.secret_key = 'Add your secret key'
 - `sudo apt-get install python-pip`
 - `pip install Flask`
 - `sudo pip install httplib2 oauth2client sqlalchemy sqlalchemy_utils psycopg2 requests`
-34. 
+34. Create a conf file for catalog with `sudo nano /etc/apache2/sites-available/catalog.conf` and paste the below code:
+```
+<VirtualHost *:80>
+		ServerName YOUR_IP_ADDRESS_OR_DOMAIN_NAME
+		ServerAdmin YOUR_EMAIL_ADDRESS
+		WSGIScriptAlias / /var/www/catalog/catalog.wsgi
+		<Directory /var/www/catalog/catalog/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		Alias /static /var/www/catalog/catalog/static
+		<Directory /var/www/catalog/catalog/static/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		LogLevel warn
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+35. 

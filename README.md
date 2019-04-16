@@ -48,4 +48,9 @@ from catalog import app as application
 application.secret_key = 'Add your secret key'
 ```
 31. Save your main python file for the project as `__init__.py` by overriding its name using `sudo nano`.
-32. 
+32. Install virtual environment by running `sudo pip install virtualenv`. Create with `sudo virtualenv venv`. Activate with `source venv/bin/activate`. Set permissions with `sudo chmod -R venv`.
+33. Install pip and install all third party libraries that your application uses.
+- `sudo apt-get install python-pip`
+- `pip install Flask`
+- `sudo pip install httplib2 oauth2client sqlalchemy sqlalchemy_utils psycopg2 requests`
+34. 

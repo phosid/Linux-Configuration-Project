@@ -16,3 +16,5 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 7. run `sudo adduser grader` to make a user named `grader`.
 8. run `sudo nano /etc/sudoers.d/grader` to create file and type in `grader ALL=(ALL) NOPASSWD:ALL`. Save file. This step grants `grader` user the ability to use the `sudo` command.
 9. run `su grader` to switch user to grader. Under grader, we will set up a public key authentication method so we can use our terminal to login to the linux server from now on.
+10. On the local machine, open the terminal and run `ssh-keygen` to generate a key pair. It is recommended you save it under the default directory and change the file name (the last portion of the path).
+11. 

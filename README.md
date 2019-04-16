@@ -24,4 +24,8 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 15. Back on your local machine, run `ssh grader@[YOUR_SERVERS_IP_ADDRESS] -p 22 -i ~.ssh/keyforgrader`. You must enter the public IP address after the @ sign for your server. This will log you into your server from your local machine's terminal. If you set a password when you created the ssh key pair, it will prompt you to enter the password.
 16. On the server, run `sudo nano /etc/ssh/sshd_config`.
 17. Change `PasswordAuthentication yes` to `PasswordAuthentication no`, `Port 22` to `Port 2200`, and `PermitRootLogin prohibit-password` to `PermitRootLogin no`. These changes will force key-based authentication, change the server port to 2200 (so you will use -p 2200 to login now), and disable remote login for the root user.
-18. 
+18. run `sudo ufw default deny incoming` to block all incoming requests.
+19. run `sudo ufw default allow outgoing` to allow outgoing requests.
+20. run `sudo ufw allow ssh`, `sudo ufw allow ntp` (port 123), `sudo ufw allow www` (port 80), and `sudo ufw allow 2200/tcp`.
+21. Just in case, add custom rules to your firewall under the networking tab on the AWS website.
+22. 

@@ -9,4 +9,7 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 ## Walkthrough of software packages installed and configuration changes made:
 1. In this project, I used Amazon Lightsail for a publicly accessible Ubuntu Linux Server to host the web application. I made an account with Amazon Web Services(AWS) and created a Lightsail Instance, selecting the "OS only" option and "Ubuntu 16.04 LTS". I kept the instance with its default name. As long as you delete the instance within one month, you should not be charged.
 2. Once the instance is created, we'll first connect via SSH through the browser by clicking on "Connect using SSH".
-3. 
+3. run `sudo apt-get upgdate` to make server aware of updates.
+4. run `sudo apt-get upgrade` to update software.
+5. run `sudo apt-get autoremove` to remove software no longer required.
+6. 

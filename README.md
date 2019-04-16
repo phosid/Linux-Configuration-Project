@@ -21,5 +21,5 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 12. Back on your local machine, read the contents of the .pub file (public key) by running the `cat` command. Copy the public key.
 13. run `sudo nano .ssh/authorized_keys` and paste the contents of the public key into the file. Save the file.
 14. Set permissions by running `chmod 700 .ssh` and `chmod 644 .ssh/authorized_keys`.
-15. Back on your local machine, run `ssh grader@[YOUR_SERVERS_IP_ADDRESS] -p 22 -i ~.ssh/keyforgrader`. You must enter the public IP address after the @ sign for your server.
+15. Back on your local machine, run `ssh grader@[YOUR_SERVERS_IP_ADDRESS] -p 22 -i ~.ssh/keyforgrader`. You must enter the public IP address after the @ sign for your server. This will log you into your server from your local machine's terminal. If you set a password when you created the ssh key pair, it will prompt you to enter the password.
 16. 

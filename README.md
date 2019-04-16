@@ -42,9 +42,10 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/FlaskApp/")
+sys.path.insert(0,"/var/www/catalog/")
 
-from FlaskApp import app as application
+from catalog import app as application
 application.secret_key = 'Add your secret key'
 ```
-31. 
+31. Save your main python file for the project as `__init__.py` by overriding its name using `sudo nano`.
+32. 

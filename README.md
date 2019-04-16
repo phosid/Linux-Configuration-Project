@@ -13,4 +13,6 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 4. run `sudo apt-get upgrade` to upgrade software.
 5. run `sudo apt-get autoremove` to remove software no longer required.
 6. run `sudo apt-get install finger` to install finger software; with this software, you can run `finger [username]`(for example, `finger ubuntu`) to find more details about a particular user.
-7. 
+7. run `sudo adduser grader` to make a user named `grader`.
+8. run `su grader` to switch user to grader. Under grader, we will set up a public key authentication method so we can use our terminal to login to the linux server from now on.
+9. 

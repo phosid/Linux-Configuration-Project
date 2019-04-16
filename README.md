@@ -20,7 +20,7 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 11. Connect back to SSH using the browser. Once the key pairs are generated, we need to update the server with the `.pub` key. run `mkdir .ssh` within your home directory and create a new file by running `touch .ssh/authorized_keys`.
 12. Back on your local machine, read the contents of the .pub file (public key) by running the `cat` command. Copy the public key.
 13. run `sudo nano .ssh/authorized_keys` and paste the contents of the public key into the file. Save the file.
-14. Set permissions by running `chmod 700 .ssh` and `chmod 644 .ssh/authorized_keys`.
+14. Set permissions by running `chmod 700 .ssh` and `chmod 644 .ssh/authorized_keys`. run `sudo service ssh restart` to apply changes.
 15. Back on your local machine, run `ssh grader@[YOUR_SERVERS_IP_ADDRESS] -p 22 -i ~.ssh/keyforgrader`. You must enter the public IP address after the @ sign for your server. This will log you into your server from your local machine's terminal. If you set a password when you created the ssh key pair, it will prompt you to enter the password.
 16. On the server, run `sudo nano /etc/ssh/sshd_config`.
 17. Change `PasswordAuthentication yes` to `PasswordAuthentication no`, `Port 22` to `Port 2200`, and `PermitRootLogin prohibit-password` to `PermitRootLogin no`. These changes will force key-based authentication, change the server port to 2200 (so you will use -p 2200 to login now), and disable remote login for the root user.
@@ -28,4 +28,5 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 19. run `sudo ufw default allow outgoing` to allow outgoing requests.
 20. run `sudo ufw allow ssh`, `sudo ufw allow ntp` (port 123), `sudo ufw allow www` (port 80), and `sudo ufw allow 2200/tcp`.
 21. Just in case, add custom rules to your firewall under the networking tab on the AWS website.
-22. 
+22. run `sudo ufw enable` to enable firewall.
+23. 

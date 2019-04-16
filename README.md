@@ -29,4 +29,8 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 20. run `sudo ufw allow ssh`, `sudo ufw allow ntp` (port 123), `sudo ufw allow www` (port 80), and `sudo ufw allow 2200/tcp`.
 21. Just in case, add custom rules to your firewall under the networking tab on the AWS website.
 22. run `sudo ufw enable` to enable firewall.
-23. 
+23. Install Apache by running `sudo apt-get install apache2`.
+24. Install mod_wsgi by running `sudo apt-get install libapache2-mod-wsgi`.
+25. Enable mod_wsgi with `sudo a2enmod wsgi`.
+26. Start apache with `sudo service apache2 start`.
+27. 

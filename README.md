@@ -33,4 +33,7 @@ This is the final project for Udacity Full Stack Web Development program. In thi
 24. Install mod_wsgi by running `sudo apt-get install libapache2-mod-wsgi`.
 25. Enable mod_wsgi with `sudo a2enmod wsgi`.
 26. Start apache with `sudo service apache2 start`.
-27. 
+27. Install git with `sudo apt-get install git`.
+28. Run `cd /var/www` and create a new folder with `sudo mkdir catalog`. Change the owner of the catalog folder using `sudo chown -R grader:grader catalog`.
+29. In `/var/www/catalog`, run `git clone https://github.com/phosid/Item-Catalog-Project` to clone your catalog project. *Replace my link with your link.
+30. 

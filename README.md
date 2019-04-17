@@ -99,3 +99,5 @@ exit
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 - https://umar-yusuf.blogspot.com/2018/02/deploying-python-flask-web-app-on.html
 - http://leonwang.me/post/deploy-flask
+
+These resources really helped me out. Thank you! On top of that, I had to delete several lightsail instances and start from scratch several times before I got the right configurations. I would also like to thank the Udacity community for their help (looking through Q&A forums to find guidance from people with similar problems).

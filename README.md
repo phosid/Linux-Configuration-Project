@@ -76,4 +76,20 @@ application.secret_key = 'Add your secret key'
 35. Update path to client_secrets for all your file to `/var/www/catalog/catalog/client_secrets.json`.
 36. Disable default ubuntu webpage with `sudo a2dissite 000-default.conf`.
 37. Enable catalog with `sudo a2ensite catalog.conf`.
-38. 
+38. Install PostgresSQL and set up database with the code below:
+```
+sudo apt-get install libpq-dev python-dev
+sudo apt-get install postgresql postgresql-contrib
+sudo su - postgres
+psql
+CREATE USER catalog WITH PASSWORD 'password';
+ALTER USER catalog CREATEDB;
+CREATE DATABASE catalog WITH OWNER catalog;
+\c catalog
+REVOKE ALL ON SCHEMA public FROM public;
+GRANT ALL ON SCHEMA public TO catalog;
+\q
+exit
+```
+39. Modify the engine creation of your `__init__.py`, `database_setup.py`, and other additional files to `engine = create_engine('postgresql://catalog:password@localhost/catalog')`.
+40. 

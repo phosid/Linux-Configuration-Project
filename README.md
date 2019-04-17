@@ -92,4 +92,5 @@ GRANT ALL ON SCHEMA public TO catalog;
 exit
 ```
 39. Modify the engine creation of your `__init__.py`, `database_setup.py`, and other additional files to `engine = create_engine('postgresql://catalog:password@localhost/catalog')`.
-40. 
+40. Restart apache service with `sudo service apache2 restart`.
+41. Visit the IP address or domain name to load your web application.

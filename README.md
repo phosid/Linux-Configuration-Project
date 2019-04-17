@@ -94,3 +94,8 @@ exit
 39. Modify the engine creation of your `__init__.py`, `database_setup.py`, and other additional files to `engine = create_engine('postgresql://catalog:password@localhost/catalog')`.
 40. Restart apache service with `sudo service apache2 restart`.
 41. Visit the IP address or domain name to load your web application.
+
+## Third-party resources used to complete project:
+- https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+- https://umar-yusuf.blogspot.com/2018/02/deploying-python-flask-web-app-on.html
+- http://leonwang.me/post/deploy-flask
